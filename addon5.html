@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Forms Excersice</title>
+    </head>
+    <body>
+        <a id="nav" href="index.html"><span>home</span></a>
+        <a id="nav" href="addon1.html"><span>1</span></a>
+        <a id="nav" href="addon2.html"><span>2</span></a>
+        <a id="nav" href="addon3.html"><span>3</span></a>
+        <a id="nav" href="addon4.html"><span>4</span></a>
+        <a id="nav" href="addon5.html"><span>5</span></a>
+        <a id="nav" href="aboutme.html"><span>About Me</span></a>
+        <a id="nav" href="To-do List.html"><span>To-do List</span></a>
+
+        <h1>Register</h1>
+
+        <form>
+            <label for="firstName">First Name:</label>
+            <input name="firstName" id="firstName" type="text" placeholder="John" required>
+            <label for="lastName">Last Name:</label>
+            <input name="lastName" id="lastName" type="text" placeholder="Smith" required>
+           
+            <div>
+            <label for="male">Male</label>
+            <input name="genderChoice" id="male" type="radio" value="MALE">
+            <label for="female">Female</label>
+            <input name="genderChoice" id="female" type="radio" value="FEMALE">
+            <label for="other">Other</label>
+            <input name="genderChoice" id="other" type="radio" value="OTHER">
+            </div>
+
+            <div>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" placeholder="Your Email" required>
+            <label for="password">Password:</label>
+            <input name="password" id="password" type="password" placeholder="Your Password" pattern=".{5,10}" required title="Must be 5 to 10 characters">
+            </div>
+
+            <div>
+            <label for="birthday">Birthday:</label>
+            <select name="month">
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+            </select>
+            <select name="day">
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select name="year">
+                <option>Year</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="checkbox">I agree to the terms and conditions</label>
+            <input name="checkbox" id="checkbox" type="checkbox" required>
+            </div>
+
+        <input type="submit">
+    
+        </form>
+    </body>
+</html>
